@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luana Carvalho | Nutricionista em Salvador</title>
+<meta name="description" content="Nutricionista em Salvador. Emagrecimento sem restrições, com estratégia, leveza e acompanhamento individualizado. Atendimento online e presencial.">
+<meta name="theme-color" content="#233428">
+<link rel="icon" href="img/logo.webp" type="image/webp">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=zodiak@300,400,700,301,401&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=ranade@1,2&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- filtro SVG do botão "líquido" (CTA) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="liquid" x="-10%" y="-10%" width="120%" height="120%">
+    <feTurbulence data-liquid-noise type="fractalNoise" baseFrequency="0.01 0.015" numOctaves="2" result="n"/>
+    <feDisplacementMap data-liquid-map in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#inicio" class="header__brand" aria-label="Luana Carvalho Nutricionista">
+      <img src="img/logo-transparent.png" alt="Logotipo Luana Carvalho Nutricionista">
+    </a>
+
+    <nav class="header__nav" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#areas">Áreas</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#atendimento">Atendimento</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+
+    <a href="#contato" class="btn btn--sm header__cta">Agendar consulta<span class="arrow" aria-hidden="true"></span></a>
+
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">
+      <span class="menu-btn__label">Menu</span>
+      <span class="menu-btn__bars" aria-hidden="true"><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu__inner">
+    <nav class="menu__nav" aria-label="Menu">
+      <a href="#sobre"><span>01</span>Sobre</a>
+      <a href="#areas"><span>02</span>Áreas de atuação</a>
+      <a href="#como-funciona"><span>03</span>Como funciona</a>
+      <a href="#atendimento"><span>04</span>Atendimento</a>
+      <a href="#depoimentos"><span>05</span>Resultados</a>
+      <a href="#duvidas"><span>06</span>Dúvidas</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="#contato" class="btn">Agendar consulta<span class="arrow" aria-hidden="true"></span></a>
+      <p><a href="https://instagram.com/nutriluanafcarvalho" target="_blank" rel="noopener">@nutriluanafcarvalho</a><br>Salvador — Bahia &middot; Online</p>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <h1 class="hero__title split">
+        <span class="hero__line hero__line--bold">Melhore seu corpo</span>
+        <span class="hero__line">sem <span class="u">restrições.</span></span>
+      </h1>
+      <p class="hero__lede reveal" data-d="3">
+        Nutrição para emagrecer com estratégia, consciência e constância. Um plano individualizado que respeita a sua rotina, os seus gostos e o seu corpo. Presencial em Salvador (BA) e online.
+      </p>
+      <div class="hero__actions reveal" data-d="4">
+        <a href="#contato" class="btn btn--lg">Agendar uma consulta<span class="arrow" aria-hidden="true"></span></a>
+        <a href="#sobre" class="btn btn--lg btn--outline">Conheça a Luana<span class="arrow" aria-hidden="true"></span></a>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="hero__frame">
+        <figure class="hero__photo img-reveal" data-parallax>
+          <img src="img/luana-hero.jpg" alt="Luana Carvalho, nutricionista, em seu consultório" width="765" height="1024" fetchpriority="high">
+          <figcaption class="hero__card">
+            <span class="hero__card-icon" aria-hidden="true"><svg viewBox="0 0 120 200"><path d="M60 195C60 120 20 90 20 50c0-25 18-45 40-45s40 20 40 45c0 40-40 70-40 145Z" fill="none" stroke="currentColor" stroke-width="9"/><path d="M60 195V20" fill="none" stroke="currentColor" stroke-width="9"/></svg></span>
+            <span><strong>Presencial e online</strong><small>Salvador (BA) e todo o Brasil</small></span>
+          </figcaption>
+        </figure>
+        <div class="seal" aria-hidden="true">
+          <svg class="seal__ring" viewBox="0 0 200 200">
+            <defs><path id="sealPath" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text><textPath href="#sealPath" textLength="486" lengthAdjust="spacing">MELHORE SEU CORPO ✦ SEM RESTRIÇÕES ✦ </textPath></text>
+          </svg>
+          <svg class="seal__leaf" viewBox="0 0 120 200"><path d="M60 195C60 120 20 90 20 50c0-25 18-45 40-45s40 20 40 45c0 40-40 70-40 145Z" fill="none" stroke="currentColor" stroke-width="7"/><path d="M60 195V20" fill="none" stroke="currentColor" stroke-width="7"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <dl class="stats reveal" data-d="5">
+      <div><dt><b class="count" data-target="17" data-suffix=" mil">0</b></dt><dd>vidas transformadas</dd></div>
+      <div><dt><b class="count" data-target="12" data-suffix="+ anos">0</b></dt><dd>de consultório</dd></div>
+      <div><dt><b>Online</b> &amp; presencial</dt><dd>Salvador, Brasil e exterior</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= RIBBON ================= -->
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon__track">
+    <span>Emagrecimento consciente</span><i class="ribbon__dot"></i>
+    <span>Nutrição inteligente</span><i class="ribbon__dot"></i>
+    <span>Sem terrorismo alimentar</span><i class="ribbon__dot"></i>
+    <span>Estilo de vida</span><i class="ribbon__dot"></i>
+    <span>Emagrecer com equilíbrio</span><i class="ribbon__dot"></i>
+    <span>Emagrecimento consciente</span><i class="ribbon__dot"></i>
+    <span>Nutrição inteligente</span><i class="ribbon__dot"></i>
+    <span>Sem terrorismo alimentar</span><i class="ribbon__dot"></i>
+    <span>Estilo de vida</span><i class="ribbon__dot"></i>
+    <span>Emagrecer com equilíbrio</span><i class="ribbon__dot"></i>
+  </div>
+</div>
+
+<!-- ================= SOBRE ================= -->
+<section class="section about" id="sobre">
+  <div class="container about__grid">
+    <div class="about__frame">
+      <figure class="about__photo img-reveal" data-parallax>
+        <img src="img/luana-sobre.jpg" alt="Luana Carvalho, nutricionista, em seu consultório em Salvador" width="765" height="1024" loading="lazy">
+        <figcaption class="hero__card">
+          <span class="hero__card-icon" aria-hidden="true"><svg viewBox="0 0 120 200"><path d="M60 195C60 120 20 90 20 50c0-25 18-45 40-45s40 20 40 45c0 40-40 70-40 145Z" fill="none" stroke="currentColor" stroke-width="9"/><path d="M60 195V20" fill="none" stroke="currentColor" stroke-width="9"/></svg></span>
+          <span><strong>CRN&#8209;5</strong><small>Nutricionista clínica</small></span>
+        </figcaption>
+      </figure>
+      <div class="seal seal--right" aria-hidden="true">
+        <svg class="seal__ring" viewBox="0 0 200 200">
+          <defs><path id="sealPath2" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text><textPath href="#sealPath2" textLength="486" lengthAdjust="spacing">NUTRIÇÃO COM ESTRATÉGIA ✦ SEM RESTRIÇÕES ✦ </textPath></text>
+        </svg>
+        <svg class="seal__leaf" viewBox="0 0 120 200"><path d="M60 195C60 120 20 90 20 50c0-25 18-45 40-45s40 20 40 45c0 40-40 70-40 145Z" fill="none" stroke="currentColor" stroke-width="7"/><path d="M60 195V20" fill="none" stroke="currentColor" stroke-width="7"/></svg>
+      </div>
+    </div>
+
+    <div class="about__copy">
+      <p class="tag reveal">Prazer, sou a Luana</p>
+      <h2 class="h2 split">A nutrição que cabe <strong>na sua vida real.</strong></h2>
+      <p class="lead" data-fill>Salada sozinha não garante resultado. Um hambúrguer ocasional não é o vilão. E exercício ajuda, mas não compensa uma alimentação desequilibrada. O que realmente importa é o contexto, a frequência e o equilíbrio das escolhas ao longo do tempo.</p>
+      <div class="prose reveal">
+        <p>Acompanho mulheres e homens que já tentaram de tudo — e saíram do ciclo das dietas restritivas mais frustrados do que começaram. Meu trabalho é traduzir a ciência da nutrição em um plano possível, saboroso e sustentável, feito para o seu dia a dia.</p>
+      </div>
+      <ul class="ticks">
+        <li class="reveal">Plano alimentar individualizado — sem cardápio pronto</li>
+        <li class="reveal" data-d="1">Acompanhamento próximo entre as consultas</li>
+        <li class="reveal" data-d="2">Avaliação corporal completa e ajustes contínuos</li>
+        <li class="reveal" data-d="3">Comida de verdade, sem culpa e sem terrorismo alimentar</li>
+      </ul>
+      <a href="#contato" class="link-arrow reveal">Quero começar<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ÁREAS ================= -->
+<section class="section areas" id="areas" data-areas>
+  <div class="container">
+    <h2 class="h2 areas__title split">Com o que eu posso <span class="u">te ajudar.</span></h2>
+
+    <div class="areas__viewport" data-areas-viewport>
+      <ul class="areas__list" data-areas-list>
+      <li class="area reveal" data-d="0">
+        <figure class="area__img"><img src="img/luana-hero.jpg" alt="" loading="lazy" style="object-position:50% 18%"></figure>
+        <h3 class="area__name">Emagrecimento consciente</h3>
+        <p class="area__desc">Perda de peso sem dietas extremas: estratégia, consciência e constância para um resultado que se mantém.</p>
+      </li>
+      <li class="area reveal" data-d="1">
+        <figure class="area__img"><img src="img/luana3.webp" alt="" loading="lazy" style="object-position:50% 25%"></figure>
+        <h3 class="area__name">Ganho de massa muscular</h3>
+        <p class="area__desc">Plano alimentar para crescer com saúde, alinhado ao seu treino e à sua rotina.</p>
+      </li>
+      <li class="area reveal" data-d="2">
+        <figure class="area__img"><img src="img/luana-sobre.jpg" alt="" loading="lazy" style="object-position:50% 22%"></figure>
+        <h3 class="area__name">Resistência à insulina e SOP</h3>
+        <p class="area__desc">Condução nutricional individualizada, sempre em conjunto com a equipe médica que acompanha você.</p>
+      </li>
+      <li class="area reveal" data-d="0">
+        <figure class="area__img"><img src="img/luana2.jpg" alt="" loading="lazy" style="object-position:50% 25%"></figure>
+        <h3 class="area__name">Hipotireoidismo</h3>
+        <p class="area__desc">Estratégia alimentar que respeita o seu quadro clínico e os seus objetivos.</p>
+      </li>
+      <li class="area reveal" data-d="1">
+        <figure class="area__img"><img src="img/luana-hero.jpg" alt="" loading="lazy" style="object-position:50% 70%"></figure>
+        <h3 class="area__name">Gestantes</h3>
+        <p class="area__desc">Alimentação equilibrada e segura durante a gestação, com acompanhamento próximo.</p>
+      </li>
+      <li class="area reveal" data-d="2">
+        <figure class="area__img"><img src="img/luana-sobre.jpg" alt="" loading="lazy" style="object-position:50% 60%"></figure>
+        <h3 class="area__name">Nutrição esportiva</h3>
+        <p class="area__desc">Para quem treina: alimentação ajustada ao desempenho, à recuperação e à composição corporal.</p>
+      </li>
+      </ul>
+    </div>
+
+    <div class="areas__nav">
+      <button class="areas__btn" data-areas-prev aria-label="Áreas anteriores"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5m0 0 6-6m-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <p class="areas__count"><b data-areas-now>01</b> / <span data-areas-total>02</span></p>
+      <button class="areas__btn" data-areas-next aria-label="Próximas áreas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MÉTODO ================= -->
+<section class="method" id="metodo">
+  <div class="method__panel">
+    <div class="container method__grid">
+      <figure class="method__photo img-reveal" data-parallax>
+        <img src="img/luana3.webp" alt="Luana Carvalho realizando avaliação corporal em seu consultório" width="340" height="510" loading="lazy">
+      </figure>
+
+      <div class="method__copy">
+        <p class="tag tag--light reveal">O método</p>
+        <h2 class="h2 split">Um método de <span class="u">estratégia</span> e leveza.</h2>
+        <p class="reveal">Emagrecer não é passar fome nem cortar tudo o que você gosta. É entender o seu corpo, construir um plano que caiba na sua rotina e aprender a escolher bem em qualquer lugar.</p>
+        <p class="reveal">Cada plano nasce da sua avaliação — nada de cardápio pronto. Você entende o porquê de cada escolha e deixa de viver de proibições, com acompanhamento próximo ao longo de todo o processo.</p>
+        <p class="reveal">O resultado é mais do que um número na balança: é consciência, constância e autonomia para manter o que conquistou, sem culpa e sem terrorismo alimentar.</p>
+        <a href="#contato" class="btn btn--gold reveal">Agendar uma consulta<span class="arrow" aria-hidden="true"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SINAIS ================= -->
+<section class="signs" id="sinais" data-carousel="signs">
+  <div class="signs__panel">
+    <div class="container signs__inner">
+      <h2 class="h2 signs__title split">Talvez seja hora de <span class="u">recomeçar</span> com leveza.</h2>
+      <p class="pill reveal">Se você já se pegou pensando</p>
+
+      <div class="signs__stage">
+        <p class="sign is-active">Já tentei de tudo e sempre volto ao ponto de partida.</p>
+        <p class="sign">Começo na segunda e, na quarta, já desisti.</p>
+        <p class="sign">Sinto culpa toda vez que como o que gosto.</p>
+        <p class="sign">Emagreço, engordo de novo e não sei por quê.</p>
+        <p class="sign">Não tenho tempo para seguir uma dieta.</p>
+      </div>
+
+      <p class="signs__note reveal">Não precisa ter tentado tudo. <strong>Isso já é motivo para uma primeira conversa.</strong></p>
+      <a href="#contato" class="btn btn--light reveal">Quero conversar<span class="arrow" aria-hidden="true"></span></a>
+
+      <div class="signs__pager">
+        <button class="signs__btn" data-prev aria-label="Anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5m0 0 6-6m-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <span class="segs" data-segs></span>
+        <button class="signs__btn" data-next aria-label="Próxima"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="section how" id="como-funciona">
+  <div class="container">
+    <div class="how__head">
+      <h2 class="h2 split">O que acontece depois que você <span class="u">agenda.</span></h2>
+      <p class="muted reveal">Um processo simples de entender e possível de manter — o mesmo que já transformou +17 mil vidas. Cada pessoa tem o seu ritmo.</p>
+    </div>
+
+    <div class="tl" data-timeline>
+      <span class="tl__line" aria-hidden="true"><i data-timeline-fill></i></span>
+      <ol class="tl__list">
+        <li class="tl__item">
+          <figure class="tl__media img-reveal" data-parallax><img src="img/luana3.webp" alt="" loading="lazy" style="object-position:50% 25%"></figure>
+          <div class="tl__text">
+            <p class="tl__eyebrow">01 · A avaliação</p>
+            <h3 class="tl__title split">Avaliar</h3>
+            <p>Histórico, exames, rotina, sono, treino e relação com a comida. Antes de prescrever, eu escuto e entendo o seu contexto.</p>
+          </div>
+        </li>
+        <li class="tl__item tl__item--flip">
+          <figure class="tl__media img-reveal" data-parallax><img src="img/luana-hero.jpg" alt="" loading="lazy" style="object-position:50% 30%"></figure>
+          <div class="tl__text">
+            <p class="tl__eyebrow">02 · O plano</p>
+            <h3 class="tl__title split">Planejar</h3>
+            <p>Estratégia alimentar construída com o que você gosta e com o que cabe na sua agenda. Nada de listas de proibições.</p>
+          </div>
+        </li>
+        <li class="tl__item">
+          <figure class="tl__media img-reveal" data-parallax><img src="img/luana2.jpg" alt="" loading="lazy" style="object-position:50% 30%"></figure>
+          <div class="tl__text">
+            <p class="tl__eyebrow">03 · O acompanhamento</p>
+            <h3 class="tl__title split">Acompanhar</h3>
+            <p>Ajustes ao longo do caminho, suporte nas dúvidas e correção de rota sempre que a vida acontecer — porque ela acontece.</p>
+          </div>
+        </li>
+        <li class="tl__item tl__item--flip">
+          <figure class="tl__media img-reveal" data-parallax><img src="img/luana-sobre.jpg" alt="" loading="lazy" style="object-position:50% 30%"></figure>
+          <div class="tl__text">
+            <p class="tl__eyebrow">04 · A autonomia</p>
+            <h3 class="tl__title split">Conquistar</h3>
+            <p>Você aprende a escolher em qualquer lugar: viagem, restaurante, festa. O resultado deixa de depender de mim.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ATENDIMENTO (BENTO) ================= -->
+<section class="section where" id="atendimento">
+  <div class="container">
+    <div class="where__head">
+      <h2 class="h2 split">Atendimentos presenciais e <span class="u">online.</span></h2>
+      <p class="muted reveal">As consultas podem acontecer presencialmente em Salvador ou online, sempre respeitando a sua preferência e a sua rotina. Escolha o formato que combina com você.</p>
+    </div>
+
+    <div class="bento">
+      <!-- Para trocar a foto do card: salve a imagem da clínica como img/clinica.jpg -->
+      <article class="tile tile--photo reveal" style="--bg:url('../img/clinica.jpg')">
+        <span class="pill">Presencial</span>
+        <div class="tile__body">
+          <h3 class="tile__title">Salvador — BA</h3>
+          <p>No consultório, com avaliação corporal completa, anamnese detalhada e leitura da sua composição. Um espaço acolhedor, pensado para você.</p>
+          <a href="#contato" class="tile__link">Agendar presencial<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+
+      <article class="tile tile--accent reveal" data-d="1">
+        <span class="pill">Online</span>
+        <div class="tile__body">
+          <h3 class="tile__title">De onde você estiver</h3>
+          <p>Videochamada de 60 minutos, plano e materiais no aplicativo e suporte direto entre as consultas — no Brasil ou no exterior.</p>
+          <a href="#contato" class="tile__link">Agendar online<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+
+      <article class="tile tile--light reveal" data-d="2">
+        <span class="pill">Para nutricionistas</span>
+        <div class="tile__body">
+          <h3 class="tile__title">Mentoria TransformaNutri</h3>
+          <p>Estruture o consultório, precifique melhor e atenda com método.</p>
+          <a href="https://instagram.com/transformanutrii" target="_blank" rel="noopener" class="tile__link">@transformanutrii<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEPOIMENTOS ================= -->
+<section class="voices" id="depoimentos" data-carousel="voices">
+  <div class="voices__panel">
+    <div class="container">
+      <h2 class="h2 voices__title split">Quem já saiu do ciclo das <span class="u">dietas restritivas.</span></h2>
+      <div class="voices__card reveal">
+        <svg class="voices__quote" viewBox="0 0 24 20" aria-hidden="true"><path fill="currentColor" d="M0 20V12C0 5 4 1 10 0l1 2.4C7.800 3.600 6.200 5.600 6 8h5v12H0Zm13 0V12C13 5 17 1 23 0l1 2.400C20.800 3.600 19.200 5.600 19 8h5v12H13Z"/></svg>
+        <div class="voices__slides">
+          <blockquote class="voice is-active">
+            <p>Eu já tinha feito de tudo: dieta líquida, jejum, remédio. Com a Luana eu comi de verdade, viajei, fui em festa — e mesmo assim perdi 14kg. A diferença foi ter um plano que cabia em mim.</p>
+            <footer><span class="voices__av" aria-hidden="true">C</span><span class="voices__who"><strong>Camila R.</strong><span>Salvador · 8 meses de acompanhamento</span></span></footer>
+          </blockquote>
+          <blockquote class="voice">
+            <p>O que mais me marcou foi o acompanhamento. Nunca me senti sozinha no processo. Qualquer dúvida, ajuste ou recaída — sempre teve alguém para me colocar de volta no eixo.</p>
+            <footer><span class="voices__av" aria-hidden="true">J</span><span class="voices__who"><strong>Juliana M.</strong><span>Online · São Paulo</span></span></footer>
+          </blockquote>
+          <blockquote class="voice">
+            <p>Perdi 11kg sem passar fome e, melhor, aprendi a manter. Hoje eu sei escolher em qualquer lugar. Minha relação com a comida mudou completamente.</p>
+            <footer><span class="voices__av" aria-hidden="true">M</span><span class="voices__who"><strong>Marina S.</strong><span>Salvador · 6 meses de acompanhamento</span></span></footer>
+          </blockquote>
+          <blockquote class="voice">
+            <p>Achei que online não funcionaria comigo. Foi o oposto: consultas pontuais, plano prático e resultado que apareceu no exame de sangue antes de aparecer na balança.</p>
+            <footer><span class="voices__av" aria-hidden="true">P</span><span class="voices__who"><strong>Patrícia L.</strong><span>Online · Lisboa</span></span></footer>
+          </blockquote>
+        </div>
+        <div class="voices__foot">
+          <div class="voices__meta"></div>
+          <div class="voices__ctrl">
+            <span class="segs" data-segs></span>
+            <button class="voices__btn" data-prev aria-label="Depoimento anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H5m0 0 6-6m-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button class="voices__btn" data-next aria-label="Próximo depoimento"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INSTAGRAM ================= -->
+<section class="section insta" id="instagram" data-insta>
+  <div class="container insta__head">
+    <h2 class="h2 split">Acompanhe no <strong>Instagram.</strong></h2>
+    <a href="https://instagram.com/nutriluanafcarvalho" target="_blank" rel="noopener" class="link-arrow reveal">@nutriluanafcarvalho<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+  <div class="insta__rail">
+    <ul class="insta__track">
+      <li><a href="https://instagram.com/nutriluanafcarvalho" target="_blank" rel="noopener"><img src="img/luana3.webp" alt="" loading="lazy"></a></li>
+      <li class="is-text"><a href="https://instagram.com/nutriluanafcarvalho" target="_blank" rel="noopener"><span>Sem terrorismo alimentar</span></a></li>
+      <li><a href="https://instagram.com/nutriluanafcarvalho" target="_blank" rel="noopener"><img src="img/luana2.jpg" alt="" loading="lazy"></a></li>
+      <li class="is-text is-light"><a href="https://instagram.com/nutriluanafcarvalho" target="_blank" rel="noopener"><span>Comida de verdade, sem culpa</span></a></li>
+      <li><a href="https://instagram.com/nutriluanafcarvalho" target="_blank" rel="noopener"><img src="img/luana1.jpg" alt="" loading="lazy"></a></li>
+      <li class="is-text"><a href="https://instagram.com/nutriluanafcarvalho" target="_blank" rel="noopener"><span>Emagrecer com equilíbrio</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section faq" id="duvidas">
+  <div class="container faq__grid">
+    <div class="faq__head">
+      <p class="tag reveal">Dúvidas frequentes</p>
+      <h2 class="h2 split">Antes de <strong>agendar.</strong></h2>
+      <p class="muted reveal">Não encontrou a sua resposta? Me chame no WhatsApp — a gente conversa por lá.</p>
+      <a href="https://wa.me/5571999999999" target="_blank" rel="noopener" class="link-arrow reveal">Falar no WhatsApp<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+
+    <div class="faq__list">
+      <div class="qa is-open reveal">
+        <button class="qa__q" aria-expanded="true">Vou precisar cortar tudo o que eu gosto?<i aria-hidden="true"></i></button>
+        <div class="qa__a"><div><p>Não. O plano é construído a partir dos seus gostos e da sua rotina. O objetivo é que você consiga manter as escolhas por anos, não por 30 dias.</p></div></div>
+      </div>
+      <div class="qa reveal">
+        <button class="qa__q" aria-expanded="false">Como funciona a consulta online?<i aria-hidden="true"></i></button>
+        <div class="qa__a"><div><p>Por videochamada, com cerca de 60 minutos. Você recebe antes um formulário de avaliação e, depois, o plano e os materiais de apoio digitalmente. O acompanhamento entre as consultas é feito por mensagem.</p></div></div>
+      </div>
+      <div class="qa reveal">
+        <button class="qa__q" aria-expanded="false">Em quanto tempo vejo resultado?<i aria-hidden="true"></i></button>
+        <div class="qa__a"><div><p>Depende do seu ponto de partida, do histórico e da constância. Os primeiros sinais — disposição, sono, digestão e menos inchaço — costumam aparecer nas primeiras semanas. Composição corporal é um processo contínuo, e é assim que ele se sustenta.</p></div></div>
+      </div>
+      <div class="qa reveal">
+        <button class="qa__q" aria-expanded="false">Preciso levar exames?<i aria-hidden="true"></i></button>
+        <div class="qa__a"><div><p>Se você tiver exames recentes, traga — eles ajudam bastante. Se não tiver, avaliamos juntos a necessidade e eu oriento quais solicitar.</p></div></div>
+      </div>
+      <div class="qa reveal">
+        <button class="qa__q" aria-expanded="false">Atende quem tem alguma condição de saúde?<i aria-hidden="true"></i></button>
+        <div class="qa__a"><div><p>Sim. Atendo casos como resistência à insulina, SOP, hipotireoidismo, gestantes, praticantes de atividade física e pós-cirúrgico, sempre em conjunto com a equipe médica que acompanha você.</p></div></div>
+      </div>
+      <div class="qa reveal">
+        <button class="qa__q" aria-expanded="false">Qual é a frequência das consultas?<i aria-hidden="true"></i></button>
+        <div class="qa__a"><div><p>Em geral, retornos a cada 30 ou 45 dias, com suporte no intervalo. O acompanhamento é o que garante o ajuste fino e a manutenção do resultado.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENTORIA ================= -->
+<section class="section mentor">
+  <div class="container mentor__grid">
+    <figure class="mentor__art img-reveal" data-parallax>
+      <img src="img/luana1.jpg" alt="Luana Carvalho em seu consultório" loading="lazy" width="500" height="600">
+    </figure>
+    <div class="mentor__copy">
+      <p class="tag tag--light reveal">Para nutricionistas</p>
+      <h2 class="h2 split">Mentoria <strong>TransformaNutri.</strong></h2>
+      <p class="reveal">Se você é nutri e quer lotar a agenda com o atendimento que ama fazer, eu te mostro o caminho que percorri — do consultório vazio às +17 mil vidas transformadas.</p>
+      <a href="https://instagram.com/transformanutrii" target="_blank" rel="noopener" class="btn btn--light reveal">Conhecer a mentoria<span class="arrow" aria-hidden="true"></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA / CONTATO ================= -->
+<section class="cta" id="contato" data-cta>
+  <div class="cta__pattern" aria-hidden="true"></div>
+  <div class="cta__liquid" aria-hidden="true" data-cta-liquid></div>
+
+  <div class="container cta__inner">
+    <div class="cta__copy">
+      <span class="cta__mark reveal" aria-hidden="true"><svg viewBox="0 0 120 200"><path d="M60 195C60 120 20 90 20 50c0-25 18-45 40-45s40 20 40 45c0 40-40 70-40 145Z" fill="none" stroke="currentColor" stroke-width="3"/><path d="M60 195V20M60 70l30-22M60 100l32-24M60 60 30 40M60 92 28 70" fill="none" stroke="currentColor" stroke-width="3"/></svg></span>
+      <h2 class="cta__title split">Seu corpo responde ao que você faz <strong>todos os dias.</strong></h2>
+      <p class="cta__text reveal">Preencha o formulário e a gente entra em contato para entender o seu caso e encontrar o melhor horário na agenda.</p>
+      <ul class="cta__info">
+        <li class="reveal"><span>Consultório</span> Salvador — Bahia</li>
+        <li class="reveal"><span>Online</span> Brasil e exterior</li>
+        <li class="reveal"><span>Instagram</span> <a href="https://instagram.com/nutriluanafcarvalho" target="_blank" rel="noopener">@nutriluanafcarvalho</a></li>
+      </ul>
+    </div>
+
+    <form class="form reveal" id="form" novalidate>
+      <div class="field"><input type="text" id="nome" name="nome" placeholder=" " required><label for="nome">Seu nome</label></div>
+      <div class="field"><input type="tel" id="tel" name="tel" placeholder=" " required><label for="tel">WhatsApp com DDD</label></div>
+      <div class="field">
+        <select id="objetivo" name="objetivo" required>
+          <option value="" selected disabled hidden></option>
+          <option>Emagrecimento</option><option>Ganho de massa muscular</option><option>Saúde e exames</option><option>Nutrição esportiva</option><option>Mentoria para nutricionistas</option>
+        </select><label for="objetivo">Seu objetivo</label>
+      </div>
+      <div class="field">
+        <select id="formato" name="formato" required>
+          <option value="" selected disabled hidden></option>
+          <option>Online</option><option>Presencial em Salvador</option><option>Tanto faz</option>
+        </select><label for="formato">Formato de atendimento</label>
+      </div>
+      <div class="field field--full"><textarea id="msg" name="msg" rows="3" placeholder=" "></textarea><label for="msg">Conte um pouco do seu momento (opcional)</label></div>
+      <button type="submit" class="btn btn--light btn--full">Enviar no WhatsApp<span class="arrow" aria-hidden="true"></span></button>
+      <p class="form__note">Ao enviar, você é direcionada para uma conversa no WhatsApp com a mensagem já preenchida.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__stage"><p class="footer__word" aria-hidden="true" data-footer-word>Luana Carvalho</p></div>
+
+  <div class="container footer__lead">
+    <p class="footer__slogan split">Melhore seu corpo sem restrições. Nutrição com estratégia, leveza e resultado que se mantém.</p>
+    <img class="footer__brand" src="img/logo-transparent.png" alt="Luana Carvalho Nutricionista">
+  </div>
+
+  <div class="container footer__info">
+    <div class="footer__block">
+      <h4>Navegue</h4>
+      <a href="#sobre">Sobre</a><a href="#areas">Áreas</a><a href="#como-funciona">Como funciona</a><a href="#atendimento">Atendimento</a><a href="#duvidas">Dúvidas</a>
+    </div>
+    <div class="footer__block">
+      <h4>Contato</h4>
+      <a href="https://wa.me/5571999999999" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://instagram.com/nutriluanafcarvalho" target="_blank" rel="noopener">@nutriluanafcarvalho</a>
+      <a href="https://bio.site/nutriluanafcarvalho" target="_blank" rel="noopener">bio.site/nutriluanafcarvalho</a>
+    </div>
+    <div class="footer__block">
+      <h4>Onde</h4>
+      <span>Salvador — Bahia</span><span>Online · Brasil e exterior</span>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>&copy; <span id="ano">2026</span> Luana Carvalho &middot; Nutricionista. Todos os direitos reservados.</p>
+    <p>Conteúdo informativo — não substitui a consulta profissional.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/5571999999999" class="wpp" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8c1.9 1 4 1.6 6.2 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3Zm0 23.6c-2 0-3.9-.5-5.5-1.5l-.4-.2-4 1.1 1.1-3.9-.3-.4A10.5 10.5 0 0 1 5.4 16C5.4 10.2 10.2 5.4 16 5.4S26.6 10.2 26.6 16 21.8 26.6 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.6 8.6 0 0 1-4.3-3.7c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-1.2 1.2-1.2 2.8-.1 4.5a13 13 0 0 0 5.4 5c2.3.9 3.2.9 4.3.8.7-.1 2-.8 2.3-1.6s.3-1.5.2-1.6c-.1-.2-.3-.2-.6-.4Z"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
